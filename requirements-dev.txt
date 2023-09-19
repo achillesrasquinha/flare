@@ -1,0 +1,2 @@
+git+https://github.com/achillesrasquinha/upyog.git@upyog#egg=upyog
+pytest

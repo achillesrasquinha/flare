@@ -7,4 +7,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, World!"
+      - run: |
+          pip install -r ./requirements-dev.txt
+          pytest -s ./test.py --cov
+          python3 ./flare.py
